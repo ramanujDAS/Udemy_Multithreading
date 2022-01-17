@@ -1,0 +1,2 @@
+public class Mythread1 {
+}
