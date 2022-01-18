@@ -13,5 +13,7 @@ public class Mythread1 {
 
         thread.start();
 
+        thread.interrupt();
+
     }
 }
