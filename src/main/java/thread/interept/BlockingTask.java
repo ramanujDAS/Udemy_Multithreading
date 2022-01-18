@@ -1,4 +1,6 @@
-public class Mythread1 {
+package thread.interept;
+
+class Mythread1 {
 
     public static void main(String[] args) {
 
@@ -14,6 +16,16 @@ public class Mythread1 {
         thread.start();
 
         thread.interrupt();
+
+    }
+}
+
+
+public class BlockingTask implements Runnable{
+
+
+    @Override
+    public void run() {
 
     }
 }
