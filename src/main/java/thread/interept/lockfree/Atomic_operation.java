@@ -2,7 +2,7 @@ package thread.interept.lockfree;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class SharingVariable {
+public class Atomic_operation {
 
 // withoutt synchrise the incrementt and decrement it will give randomw value;
 
