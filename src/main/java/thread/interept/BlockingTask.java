@@ -1,6 +1,8 @@
 package thread.interept;
 
 import java.math.BigInteger;
+import java.util.ConcurrentModificationException;
+import java.util.concurrent.ConcurrentHashMap;
 
 class Mythread1 {
 
@@ -9,11 +11,12 @@ class Mythread1 {
 
         Thread thread  = new Thread(new BlockingTask() );
 
-        Thread thread1 = new Thread(new Compute(new BigInteger("7"),new BigInteger("100000000")));
-
+        Thread thread1 = new Thread(new Compute(new BigInteger("7"),new BigInteger("10000000")));
+         thread1.setDaemon(true);
         thread1.start();
-        Thread.sleep(1);
-        thread1.interrupt();
+        thread1.join();
+
+
     }
 }
 
