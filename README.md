@@ -1,4 +1,4 @@
 #Multithreading
-practise multithrrading udemy course
+practise multithreading udemy course
 
 all tthe assignemnt will be practised heree 
